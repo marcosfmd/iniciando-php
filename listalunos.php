@@ -1,8 +1,12 @@
 
 <?php
     include './lib/bancoDeDados.php';
+ 
     $alunos = listaAlunos();
-
+    $nome = htmlspecialchars($_POST['nome']);
+    $idade = htmlspecialchars($_POST['idade']);
+    $sexo = htmlspecialchars($_POST['sexo']);
+    
 ?>
 
 <!DOCTYPE html>
@@ -46,6 +50,8 @@
                 echo '<td>' . $sexo  . '</td>';
                 echo '</tr>';
                 }
+
+
             ?>
         </table>
     </main>

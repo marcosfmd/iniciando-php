@@ -1,7 +1,8 @@
 <?php
     include './lib/bancoDeDados.php';
 
-    $alunos = listaAlunos();        
+    $alunos = listaAlunos();   
+    
 ?>
 
 <!DOCTYPE html>
