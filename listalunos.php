@@ -2,18 +2,13 @@
 <?php
     include './lib/bancoDeDados.php';
  
-    $alunos = listaAlunos();
-    
-    // $nome = htmlspecialchars($_POST['name']);
-    // $idade = (int)($_POST['age']);
-    // $sexo = htmlspecialchars($_POST['sex']);
+    $alunos = listaAlunos(); 
         
-   
-
-    if(isset($_POST[$nome])){
+    if(isset($_POST['name']) && isset($_POST['age']) && isset($_POST['sexo'])){
         $nome = htmlspecialchars($_POST['name']);
-
-        $pessoa = array('nome' => $nome, 'idade' => $idade, 'sexo' => $sexo);
+        $idade = (int)($_POST['age']);
+        $sexo = htmlspecialchars($_POST['sexo']);
+        $pessoa = array('name' => $nome, 'idade' => $idade, 'sexo' => $sexo);
         array_push($alunos, $pessoa);
     }
       
