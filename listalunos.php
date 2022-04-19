@@ -3,10 +3,20 @@
     include './lib/bancoDeDados.php';
  
     $alunos = listaAlunos();
-    $nome = htmlspecialchars($_POST['nome']);
-    $idade = htmlspecialchars($_POST['idade']);
-    $sexo = htmlspecialchars($_POST['sexo']);
     
+    // $nome = htmlspecialchars($_POST['name']);
+    // $idade = (int)($_POST['age']);
+    // $sexo = htmlspecialchars($_POST['sex']);
+        
+   
+
+    if(isset($_POST[$nome])){
+        $nome = htmlspecialchars($_POST['name']);
+
+        $pessoa = array('nome' => $nome, 'idade' => $idade, 'sexo' => $sexo);
+        array_push($alunos, $pessoa);
+    }
+      
 ?>
 
 <!DOCTYPE html>
