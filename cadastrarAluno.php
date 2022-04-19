@@ -26,14 +26,14 @@
             <fieldset>
                 <legend>Cadastro de Alunos</legend>
                 <label for="name-registration">
-                    <input type="text" id="name-registration" name="name" minlength="10" maxlength="35" title="Campo Obrigarorio" placeholder="Digite seu nome completo" required >
+                    <input type="text" id="name-registration" name="nome" minlength="10" maxlength="35" title="Campo Obrigarorio" placeholder="Digite seu nome completo" required >
                 </label>
 
                 <label for="age-registration">
-                    <input type="number" name="age" id="age-registration" min="0" max="80" title="Campo obrigatorio" placeholder="Digite sua idade" required>
+                    <input type="number" name="idade" id="age-registration" min="0" max="80" title="Campo obrigatorio" placeholder="Digite sua idade" required>
                 </label>
 
-                <select name="sex" id="sex-registration" title="Campo Obrigatorio">
+                <select name="sexo" id="sex-registration" title="Campo Obrigatorio">
                     <option value="escolha">Escolha seu Gênero</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
